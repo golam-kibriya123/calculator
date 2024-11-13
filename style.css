@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px;
+    row-gap: 30px;
+    background: rgba(83, 83, 83, 0.162);
+}
+
+.calculator {
+    width: 350px;
+    background: black;
+    border-radius: 20px;
+    padding: 40px 20px;
+    border: 2px solid rgb(23, 104, 186);
+}
+
+.calculator .cl-display {
+    height: 100px;
+    background: rgba(23, 104, 186, 0.208);
+    border: 2px solid rgb(23, 104, 186);
+    border-radius: 20px;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(97, 139, 198);
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.calculator .cl-display .operator {
+    color: rgb(23, 104, 186);
+    margin: 0 2px;
+    display: inline;
+}
+
+.cl-body .cl-btns {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cl-body .cl-btn {
+    color: rgb(23, 104, 186);
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: inset rgb(23, 104, 186) 1px 1px 0px 1px, rgb(23, 104, 186) 1px 1px 0px 1px;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+
+#cl-btn-equal {
+    grid-column: span 2;
+}
+
+.cl-body .cl-btn:hover {
+    box-shadow: inset rgb(23, 104, 186)-1px -1px 5px -1px, rgb(23, 104, 186) -1px -1px 5px -1px;
+
+}
+
+/* Counting */
+.Counting-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Counting {
+    height: 300px;
+    width: 400px;
+    transform: scale(1);
+    transition: all .4s;
+}
+
+.Counting textarea {
+    background: rgba(23, 104, 186, 0.34);
+    border: 2px solid rgb(23, 104, 186);
+    border-bottom: none;
+    width: 100%;
+    min-height: 150px;
+    font-size: 20px;
+    color: rgb(23, 104, 186);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    border-radius: 20px 20px 0 0;
+}
+
+.Counting textarea:focus {
+    outline: none;
+}
+
+
+.Counting .info {
+    background: rgba(23, 104, 186, 0.34);
+    color: rgb(23, 104, 186);
+    border: 2px solid rgb(23, 104, 186);
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.Counting .info ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.Counting .info ol li:first-child {
+    width: 41%;
+}
+
+.Counting .info ol li:first-child input {
+    width: 80%;
+    margin-top: 5px;
+    border: 2px solid rgb(23, 104, 186);
+    background: rgba(255, 255, 255, 0.228);
+    color: rgb(23, 104, 186);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.Counting .info ol li:first-child input:focus {
+    outline: none;
+}
+
+.counting-btns {}
+
+.counting-btns button {
+    background: rgb(23, 104, 186);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 10px;
+    font-size: 18px;
+    box-shadow: inset #000 -5px -6px 10px -20px, #000 2px 2px 3px 2px;
+}
+
+.counting-btns button:hover {
+
+    box-shadow: inset #000 -5px -6px 10px -20px, inset #000 2px 2px 3px 2px;
+}
